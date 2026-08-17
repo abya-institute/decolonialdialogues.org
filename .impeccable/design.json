@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-14T00:00:00.000Z",
+  "title": "Design System: Decolonial Dialogues",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "neutral",
+        "displayName": "Warm Near-Black",
+        "canonical": "#141110",
+        "tonalRamp": [
+          "oklch(15% 0.006 50)",
+          "oklch(26% 0.006 50)",
+          "oklch(37% 0.006 50)",
+          "oklch(48% 0.006 50)",
+          "oklch(60% 0.006 50)",
+          "oklch(72% 0.006 50)",
+          "oklch(84% 0.006 50)",
+          "oklch(95% 0.006 50)"
+        ]
+      },
+      "ink-raised": {
+        "role": "neutral",
+        "displayName": "Raised Band",
+        "canonical": "#1c1815",
+        "tonalRamp": [
+          "oklch(15% 0.007 55)",
+          "oklch(26% 0.007 55)",
+          "oklch(37% 0.007 55)",
+          "oklch(48% 0.007 55)",
+          "oklch(60% 0.007 55)",
+          "oklch(72% 0.007 55)",
+          "oklch(84% 0.007 55)",
+          "oklch(95% 0.007 55)"
+        ]
+      },
+      "ink-sunk": {
+        "role": "neutral",
+        "displayName": "Image Well",
+        "canonical": "#0d0b0a",
+        "tonalRamp": [
+          "oklch(15% 0.005 50)",
+          "oklch(26% 0.005 50)",
+          "oklch(37% 0.005 50)",
+          "oklch(48% 0.005 50)",
+          "oklch(60% 0.005 50)",
+          "oklch(72% 0.005 50)",
+          "oklch(84% 0.005 50)",
+          "oklch(95% 0.005 50)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Warm Paper",
+        "canonical": "#f1ebe1",
+        "tonalRamp": [
+          "oklch(15% 0.012 85)",
+          "oklch(26% 0.012 85)",
+          "oklch(37% 0.012 85)",
+          "oklch(48% 0.012 85)",
+          "oklch(60% 0.012 85)",
+          "oklch(72% 0.012 85)",
+          "oklch(84% 0.012 85)",
+          "oklch(95% 0.012 85)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Weathered Stone",
+        "canonical": "#a89b8c",
+        "tonalRamp": [
+          "oklch(15% 0.02 75)",
+          "oklch(26% 0.02 75)",
+          "oklch(37% 0.02 75)",
+          "oklch(48% 0.02 75)",
+          "oklch(60% 0.02 75)",
+          "oklch(72% 0.02 75)",
+          "oklch(84% 0.02 75)",
+          "oklch(95% 0.02 75)"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Dry Clay",
+        "canonical": "#8a7f72",
+        "tonalRamp": [
+          "oklch(15% 0.018 75)",
+          "oklch(26% 0.018 75)",
+          "oklch(37% 0.018 75)",
+          "oklch(48% 0.018 75)",
+          "oklch(60% 0.018 75)",
+          "oklch(72% 0.018 75)",
+          "oklch(84% 0.018 75)",
+          "oklch(95% 0.018 75)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Brown",
+        "canonical": "#2e2822",
+        "tonalRamp": [
+          "oklch(15% 0.009 65)",
+          "oklch(26% 0.009 65)",
+          "oklch(37% 0.009 65)",
+          "oklch(48% 0.009 65)",
+          "oklch(60% 0.009 65)",
+          "oklch(72% 0.009 65)",
+          "oklch(84% 0.009 65)",
+          "oklch(95% 0.009 65)"
+        ]
+      },
+      "pomegranate": {
+        "role": "primary",
+        "displayName": "Heraldic Pomegranate",
+        "canonical": "#a32e38",
+        "tonalRamp": [
+          "oklch(15% 0.14 20)",
+          "oklch(26% 0.14 20)",
+          "oklch(37% 0.14 20)",
+          "oklch(48% 0.14 20)",
+          "oklch(60% 0.14 20)",
+          "oklch(72% 0.13 20)",
+          "oklch(84% 0.10 20)",
+          "oklch(95% 0.05 20)"
+        ]
+      },
+      "pomegranate-bright": {
+        "role": "primary",
+        "displayName": "Split Pomegranate",
+        "canonical": "#e2706b",
+        "tonalRamp": [
+          "oklch(15% 0.13 25)",
+          "oklch(26% 0.13 25)",
+          "oklch(37% 0.13 25)",
+          "oklch(48% 0.13 25)",
+          "oklch(60% 0.13 25)",
+          "oklch(72% 0.12 25)",
+          "oklch(84% 0.09 25)",
+          "oklch(95% 0.04 25)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The programme name in the hero, over the scrim. One per page."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Major section headings. Secondary sections step down to clamp(1.75rem, 3.6vw, 2.5rem)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Curriculum entries, on-the-ground blocks, sub-headings. Faculty names sit at a fixed 1.4rem."
+      },
+      "quote": {
+        "displayName": "Feature Quote",
+        "purpose": "The featured testimonial only. Supporting testimonials drop to 1.05rem body on paper/90."
+      },
+      "numeral": {
+        "displayName": "Price Numeral",
+        "purpose": "The price, and only the price. The superseded rate sits beside it in ui at 1.5rem, struck through."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, capped at the single 34rem (~68ch) measure."
+      },
+      "body-large": {
+        "displayName": "Lead Body",
+        "purpose": "Standfirst paragraphs directly under a section heading."
+      },
+      "ui": {
+        "displayName": "UI Sans",
+        "purpose": "Alegreya Sans wherever text is an instrument rather than a passage: nav, buttons, prices, captions, attributions, footer.",
+        "wordSpacing": "0.09em",
+        "note": "Alegreya Sans ships a 0.175em word space against Arial's 0.278em, which reads as run-together words at nav and label sizes. Every sans usage must carry word-spacing: 0.09em."
+      },
+      "label": {
+        "displayName": "Field Label",
+        "purpose": "Uppercase tracked name for an adjacent value (Dates, Included, To book). Never an eyebrow above a heading.",
+        "wordSpacing": "0.09em",
+        "textTransform": "uppercase"
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-settle",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only authored easing. Exponential ease-out used by the reveal (900ms) and the one-time hero scale (2000ms)."
+      },
+      {
+        "name": "duration-reveal",
+        "value": "900ms",
+        "purpose": "Opacity, transform and blur on the curriculum reveal — the page's single authored moment."
+      },
+      {
+        "name": "stagger-reveal",
+        "value": "70ms",
+        "purpose": "Per-item delay across the curriculum list, applied via --reveal-delay."
+      },
+      {
+        "name": "duration-hero-settle",
+        "value": "2000ms",
+        "purpose": "Hero photograph settling from scale(1.07) to scale(1), once, on load."
+      },
+      {
+        "name": "duration-chrome",
+        "value": "500ms",
+        "purpose": "Header ground/scrim crossfade, mobile anchor-row max-height + opacity, and the 4px arrow nudge on button hover."
+      },
+      {
+        "name": "duration-disclosure",
+        "value": "300ms",
+        "purpose": "Chevron rotation on the credits disclosure."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "container", "value": "72rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single conversion action — an email booking link. The pill shape is exclusive to it, so it is findable by shape alone.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Reserve a place<svg class=\"ds-btn-primary__arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4.5 12h15\"/><path d=\"M13.2 5.8 19.5 12l-6.3 6.2\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 12px; background: var(--color-pomegranate, #a32e38); color: #fff; font-family: var(--font-alegreya-sans), system-ui, sans-serif; font-size: 1rem; font-weight: 500; word-spacing: 0.09em; text-decoration: none; padding: 14px 28px; border: none; border-radius: 9999px; transition: background-color 200ms, color 200ms; } .ds-btn-primary__arrow { width: 16px; height: 16px; transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: var(--color-pomegranate-bright, #e2706b); color: var(--color-ink, #141110); } .ds-btn-primary:hover .ds-btn-primary__arrow { transform: translateX(4px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-pomegranate-bright, #e2706b); outline-offset: 3px; border-radius: 9999px; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "The one secondary route (a travel enquiry). Square-cornered and hairline-bordered so it can never be mistaken for the booking pill.",
+      "html": "<a class=\"ds-btn-outline\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"2.8\" y=\"5\" width=\"18.4\" height=\"14\" rx=\"2.2\"/><path d=\"m3.6 7.2 7.3 5.2c.7.5 1.5.5 2.2 0l7.3-5.2\"/></svg>Ask us about travel</a>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; gap: 12px; background: transparent; color: var(--color-paper, #f1ebe1); font-family: var(--font-alegreya-sans), system-ui, sans-serif; font-size: 0.875rem; font-weight: 500; word-spacing: 0.09em; text-decoration: none; padding: 12px 24px; border: 1px solid var(--color-rule, #2e2822); border-radius: 0; transition: border-color 200ms; } .ds-btn-outline svg { width: 16px; height: 16px; color: var(--color-pomegranate-bright, #e2706b); } .ds-btn-outline:hover { border-color: var(--color-faint, #8a7f72); } .ds-btn-outline:focus-visible { outline: 2px solid var(--color-pomegranate-bright, #e2706b); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "nav-link",
+      "description": "Inline link in running text. Underline is a faint hairline at 4px offset and is never removed — only recoloured on hover.",
+      "html": "<p class=\"ds-prose\">Places are booked by email — <a class=\"ds-link\" href=\"#\">write to us</a> and we will help you plan it.</p>",
+      "css": ".ds-prose { font-family: var(--font-alegreya), Georgia, serif; font-size: 1.0625rem; line-height: 1.7; color: var(--color-paper, #f1ebe1); max-width: 34rem; } .ds-link { color: inherit; text-decoration: underline; text-decoration-color: var(--color-faint, #8a7f72); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: text-decoration-color 200ms, color 200ms; } .ds-link:hover { text-decoration-color: var(--color-pomegranate-bright, #e2706b); } .ds-link:focus-visible { outline: 2px solid var(--color-pomegranate-bright, #e2706b); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Section Nav",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The fixed header's anchor row in its settled state: ink at 92% with a backdrop blur and a hairline bottom border.",
+      "html": "<div class=\"ds-nav\"><a class=\"ds-nav__mark\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9.9 2.9 12 6.3l2.1-3.4\"/><path d=\"M12 6.3V2.6\"/><path d=\"M12 6.3c4.2 0 7 3.3 7 7.4 0 4.3-3.1 7.7-7 7.7s-7-3.4-7-7.7c0-4.1 2.8-7.4 7-7.4Z\"/><path d=\"M8.4 12.7c1.6 1 5.6 1 7.2 0\"/></svg><span>Decolonial Dialogues</span></a><ul class=\"ds-nav__list\"><li><a href=\"#\">Programme</a></li><li><a href=\"#\">Faculty</a></li><li><a href=\"#\">Voices</a></li><li><a href=\"#\">What it costs</a></li></ul></div>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 4.5rem; padding: 0 32px; background: color-mix(in srgb, var(--color-ink, #141110) 92%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-rule, #2e2822); font-family: var(--font-alegreya-sans), system-ui, sans-serif; word-spacing: 0.09em; } .ds-nav__mark { display: inline-flex; align-items: center; gap: 10px; color: var(--color-paper, #f1ebe1); font-size: 1rem; font-weight: 500; letter-spacing: -0.01em; text-decoration: none; transition: opacity 200ms; } .ds-nav__mark svg { width: 20px; height: 20px; color: var(--color-pomegranate-bright, #e2706b); } .ds-nav__mark:hover { opacity: 0.8; } .ds-nav__list { display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; font-size: 0.875rem; } .ds-nav__list a { color: var(--color-muted, #a89b8c); text-decoration: none; transition: color 200ms; } .ds-nav__list a:hover { color: var(--color-paper, #f1ebe1); } .ds-nav__list a:focus-visible { outline: 2px solid var(--color-pomegranate-bright, #e2706b); outline-offset: 3px; border-radius: 2px; }"
+    },
+    {
+      "name": "Field Label and Value",
+      "kind": "custom",
+      "refersTo": "field-label",
+      "description": "The specification pattern. This is the system's replacement for an info card: uppercase tracked label above a body-scale value, over a hairline.",
+      "html": "<dl class=\"ds-spec\"><div><dt>Dates</dt><dd>29 October &ndash; 1 November 2026</dd></div><div><dt>Where</dt><dd>Granada, Andaluc&iacute;a</dd></div></dl>",
+      "css": ".ds-spec { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; max-width: 32rem; margin: 0; padding-top: 40px; border-top: 1px solid var(--color-rule, #2e2822); } .ds-spec dt { font-family: var(--font-alegreya-sans), system-ui, sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; word-spacing: 0.09em; text-transform: uppercase; color: var(--color-muted, #a89b8c); } .ds-spec dd { margin: 8px 0 0; font-family: var(--font-alegreya), Georgia, serif; font-size: 1.0625rem; line-height: 1.7; color: var(--color-paper, #f1ebe1); }"
+    },
+    {
+      "name": "Rule-Separated List Item",
+      "kind": "card",
+      "refersTo": "rule-item",
+      "description": "The recurring content unit and the system's stand-in for a card: a hairline above, 36px of breathing room, no box. Carries the page's one authored reveal on the curriculum.",
+      "html": "<ol class=\"ds-ruled\"><li><h3>The history of modern colonialism</h3><p>From its beginnings in the conquest of Al-&Aacute;ndalus to the present-day conflict in Palestine.</p></li><li><h3>Decolonizing knowledge and spirituality</h3><p>The theory of how knowledge itself was colonized.</p></li></ol>",
+      "css": ".ds-ruled { list-style: none; margin: 0; padding: 0; } .ds-ruled li { border-top: 1px solid var(--color-rule, #2e2822); padding: 36px 0; } .ds-ruled li:first-child { border-top: 0; padding-top: 0; } .ds-ruled li:last-child { padding-bottom: 0; } .ds-ruled h3 { font-family: var(--font-alegreya), Georgia, serif; font-size: clamp(1.3rem, 2.1vw, 1.7rem); font-weight: 500; line-height: 1.08; letter-spacing: -0.018em; color: var(--color-paper, #f1ebe1); margin: 0; } .ds-ruled p { max-width: 34rem; margin: 16px 0 0; font-family: var(--font-alegreya), Georgia, serif; font-size: 1.0625rem; line-height: 1.7; color: var(--color-muted, #a89b8c); }"
+    },
+    {
+      "name": "Feature Quote",
+      "kind": "custom",
+      "refersTo": "quote",
+      "description": "The lead testimonial. Display face at quote scale on the raised band, attribution in the sans below.",
+      "html": "<figure class=\"ds-quote\"><blockquote>&ldquo;What began as a journey to Granada became much more than an educational experience.&rdquo;</blockquote><figcaption>Participant, Decolonial Dialogues 2025</figcaption></figure>",
+      "css": ".ds-quote { max-width: 56rem; margin: 0; padding: 32px; background: var(--color-ink-raised, #1c1815); } .ds-quote blockquote { margin: 0; font-family: var(--font-alegreya), Georgia, serif; font-size: clamp(1.45rem, 3vw, 2.15rem); font-weight: 500; line-height: 1.32; letter-spacing: -0.018em; text-wrap: balance; color: var(--color-paper, #f1ebe1); } .ds-quote figcaption { margin-top: 32px; font-family: var(--font-alegreya-sans), system-ui, sans-serif; font-size: 0.875rem; word-spacing: 0.09em; color: var(--color-muted, #a89b8c); }"
+    },
+    {
+      "name": "Ornament",
+      "kind": "custom",
+      "refersTo": "ornament",
+      "description": "The one decorative element: the pomegranate mark between two hairlines, marking the page's single held statement. Keep it rare.",
+      "html": "<div class=\"ds-ornament\" aria-hidden=\"true\"><span></span><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9.9 2.9 12 6.3l2.1-3.4\"/><path d=\"M12 6.3V2.6\"/><path d=\"M12 6.3c4.2 0 7 3.3 7 7.4 0 4.3-3.1 7.7-7 7.7s-7-3.4-7-7.7c0-4.1 2.8-7.4 7-7.4Z\"/><path d=\"M8.4 12.7c1.6 1 5.6 1 7.2 0\"/></svg><span></span></div>",
+      "css": ".ds-ornament { display: flex; align-items: center; justify-content: center; gap: 16px; color: var(--color-pomegranate-bright, #e2706b); } .ds-ornament span { display: block; height: 1px; width: 64px; background: color-mix(in srgb, var(--color-faint, #8a7f72) 60%, transparent); } .ds-ornament svg { width: 28px; height: 28px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Lit Courtyard",
+    "overview": "The page behaves like a Granadan courtyard opened at night: a warm, dark enclosure whose walls are photographs, whose light is a single column of warm paper-coloured type, and whose only ornament is a drawn pomegranate. Nothing is boxed. Sections are separated the way an arcade separates bays — by a hairline and a change of ground tone, never by a card, a panel or a shadow. The photographs are not illustrations sitting inside the layout; they are the layout's material, running edge to edge and taking type only over a gradient scrim.\n\nThe dark ground was chosen from the use scene, not from category habit: this page is mostly opened on a phone, in the evening, from an Instagram link. It is warm near-black rather than blue-black, pulled from the shadow values in the Granada photography the page is built on. The accent is pomegranate because Granada means pomegranate and the fruit is the city's own emblem — taken from the city's heraldry rather than from Alhambra tilework, so the motif reads as a mark rather than as pastiche.\n\nThe arrangement itself is a decision, not a default. Offered distinctive alternative worlds, the client chose the category standard — the familiar course page a visitor already knows how to read — and named Emergence Magazine and Orion as the quality bar. Everything here therefore spends its ambition on execution: generous typography, restrained density, large photography carrying the weight, and exactly one authored moment of motion in the whole page. Future surfaces inherit that stance; the convention is the brief, and the craft is the differentiator.",
+    "keyCharacteristics": [
+      "Warm near-black ground (ink), never blue-black, never a light theme",
+      "One superfamily — Alegreya and Alegreya Sans — for display, body, and UI alike",
+      "Pomegranate as the single accent, in exactly two values",
+      "Full-bleed photography with gradient scrims; no framed or inset images",
+      "Hairline rules and tonal ground shifts instead of cards, panels, or shadows",
+      "Square corners everywhere except pill actions and circular portraits",
+      "One authored reveal in the entire page"
+    ],
+    "rules": [
+      {
+        "name": "The Single Ember Rule",
+        "body": "Pomegranate is the only accent this system has, and it exists in exactly two values: the deep fill and the bright on-dark mark. Never introduce a second hue for state, category, emphasis, or \"variety\". If something needs to stand apart from muted text, it becomes paper — not a new colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Legibility Floor Rule",
+        "body": "Anything carrying text on the ink ground clears 4.5:1. This is not theoretical: faint was raised from #6d6357, which measured 3.2:1 and failed as text. Below that floor a value is decoration — a rule, a marker, an underline stroke — and may never be given words to carry.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Ground Rule",
+        "body": "Depth comes from alternating ink and ink-raised bands with a hairline at the seam. That alternation is the whole sectioning vocabulary. A section that \"needs\" a card is a section that needs the other ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Alegreya and Alegreya Sans, and nothing else. Display and body are the same face at different sizes; the sans is the same superfamily. Do not pair in a third typeface for \"contrast\" — the contrast here is size and leading, not family. System display faces are out entirely.",
+        "section": "typography"
+      },
+      {
+        "name": "The Corrected Word Space Rule",
+        "body": "Alegreya Sans ships a 0.175em word space against Arial's 0.278em, which at nav and label sizes reads as run-together words. Every use of the sans therefore carries word-spacing: 0.09em — it is baked into both .ui and .label. There is no legitimate use of Alegreya Sans in this system without it.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Measure Rule",
+        "body": "Every passage of running text is capped at 34rem (~68ch) via .measure. A paragraph wider than the measure is a bug, not a layout choice.",
+        "section": "typography"
+      },
+      {
+        "name": "The Label Is Not A Kicker Rule",
+        "body": "The uppercase tracked label is a name for an adjacent value — \"Dates\", \"Included\", \"To book\". It never appears above a heading as an eyebrow or category tag.",
+        "section": "typography"
+      },
+      {
+        "name": "The Full-Bleed Rule",
+        "body": "Photographs run to the edges of their section or fill a defined aspect well. They are never inset in a frame, never given a border, never rounded, and never captioned inside a box. The only exception is the circular faculty portrait.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "A 1px rule-coloured border is the only divider in the system: section seams, list separators, disclosure edges. No thick rules, no double rules, no decorative dividers other than the Ornament.",
+        "section": "layout"
+      },
+      {
+        "name": "The No-Shadow Rule",
+        "body": "Depth is tone, scrim, and hairline. If an element seems to need a shadow to separate from its surroundings, it is on the wrong ground.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Scrim Rule",
+        "body": "Type is never set directly on a photograph. Any text over an image sits on a gradient or wash of the page ground, and the header carries its own top scrim whenever it is transparent over the hero — the Granada sky is bright enough to swallow a nav.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Square Corner Rule",
+        "body": "Radius 0 unless the element is an action pill or a portrait. A rounded card is a contradiction in this system twice over: it is a card, and it is rounded.",
+        "section": "shapes"
+      },
+      {
+        "name": "The No Cards Rule",
+        "body": "No bordered boxes, no filled panels, no tiles. This is enforced, not aspirational — the Instagram panel was rebuilt from a bordered box into a hairline row to honour it. Content is separated by rules and grounds; if a group needs to feel distinct, give it a hairline above it and space around it.",
+        "section": "shapes"
+      },
+      {
+        "name": "The One Moment Rule",
+        "body": "The page has exactly one authored reveal: the curriculum list, whose items rise 18px out of a 6px blur on a 900ms exponential ease-out, staggered 70ms apart. It was removed from every other section during the finish review, and that is the standing rule — motion elsewhere is state response only (hover colour, the 4px arrow nudge, the 500ms header settle, the 300ms chevron, the one-time 2000ms hero scale). Adding a second reveal does not double the effect; it destroys the first one.",
+        "section": "components"
+      },
+      {
+        "name": "The Visible-By-Default Rule",
+        "body": "Content ships visible in the served HTML. The reveal is opted into by a pre-paint inline script that only hides elements once it has confirmed it can bring them back — gated on IntersectionObserver support and prefers-reduced-motion: no-preference, with a 1.5s watchdog that reveals anything still hidden. No-JS, reduced-motion, and failed-observer visitors get the whole page immediately. Any future motion must be built the same way round.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do keep pomegranate to its two values and to a small share of any screen. Deep (#a32e38) fills the booking action; bright (#e2706b) carries every small mark on the dark ground.",
+      "Do clear 4.5:1 on the ink ground for anything carrying words. faint was raised from #6d6357 (3.2:1) for exactly this reason; treat that as the floor, not the target.",
+      "Do ship word-spacing: 0.09em with every use of Alegreya Sans — it is already in .ui and .label, and any new sans rule must carry it too.",
+      "Do cap running text at the single 34rem measure (~68ch).",
+      "Do separate content with a hairline and a change of ground tone.",
+      "Do put a gradient scrim under any type that sits over a photograph.",
+      "Do draw new icons at 1.4 stroke on a 24×24 viewbox, fill: none / stroke: currentColor, to match the set.",
+      "Do route every image through the Photo primitive so it inherits its blur placeholder, its ink-sunk well, and its intrinsic dimensions.",
+      "Do keep the pill shape exclusive to the booking action, so the single conversion route is findable by shape alone."
+    ],
+    "donts": [
+      "Don't add a card, a bordered box, a filled panel, or a tile. The Instagram panel was rebuilt from a box into a hairline row to hold this line.",
+      "Don't add a box-shadow. There are none in this system; depth is tone, scrim, and hairline.",
+      "Don't round anything that is not the booking pill or a portrait.",
+      "Don't introduce a third typeface, or a system display face. One superfamily, two sizes of idea.",
+      "Don't use a unicode glyph, emoji, or icon font anywhere. Icons are authored SVG, including the disclosure marker — the native <details> triangle is suppressed on purpose.",
+      "Don't set the uppercase tracked label as an eyebrow or kicker above a heading. It names an adjacent value or nothing.",
+      "Don't add a second authored motion.",
+      "Don't invert to a light ground or shift to a blue-black. The warmth is pulled from the photography and the darkness is chosen for a phone in the evening.",
+      "Don't let a photograph render without a placeholder or an explicit aspect — a white flash or a reflow on this page reads as a broken page, because the photography is the material."
+    ]
+  }
+}
