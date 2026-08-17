@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vendored tooling, not project source — linting it buries our own findings.
+    ".claude/**",
   ]),
 ]);
 
