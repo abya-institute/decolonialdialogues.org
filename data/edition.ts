@@ -111,7 +111,7 @@ export const curriculum: CurriculumEntry[] = [
   {
     id: 'modern-colonialism',
     title: 'The history of modern colonialism',
-    body: 'From its beginnings in the conquest of Al-Ándalus to the present-day conflict in Palestine — taught as one continuous history rather than as separate episodes.',
+    body: 'From its beginnings in the conquest of Al-Ándalus to the present-day conflict in Palestine, taught as one continuous history rather than as separate episodes.',
   },
   {
     id: 'decolonizing-knowledge',
@@ -145,13 +145,13 @@ export const granadaPlates = [
     id: 'albaicin',
     src: '/granada/albaicin-geraniums.jpg',
     alt: 'A whitewashed lane in the Albaicín hung with pots of red geraniums, a Moorish-style tower with a tiled inscription band rising behind the rooftops.',
-    caption: 'The Albaicín — the old Moorish quarter, on the hill facing the Alhambra.',
+    caption: 'The Albaicín: the old Moorish quarter, on the hill facing the Alhambra.',
   },
   {
     id: 'alhambra-tower',
-    src: '/granada/alhambra-tower-view.jpg',
-    alt: 'A weathered Alhambra tower in golden-hour light, its plaster stained and peeling, with the Vega of Granada stretching hazy to the horizon below.',
-    caption: 'The Alhambra, still standing watch over the plain it once ruled.',
+    src: '/granada/alhambra-columns.jpg',
+    alt: 'Intricately carved stucco arches and slender columns in the Alhambra, muqarnas honeycomb vaulting and bands of Arabic calligraphy layered above a horseshoe arch.',
+    caption: 'The Alhambra: its walls carved through with a script most visitors can no longer read.',
   },
 ] as const;
 
@@ -264,12 +264,12 @@ export const imageCredits: ImageCredit[] = [
     cropped: true,
   },
   {
-    src: '/granada/alhambra-tower-view.jpg',
-    title: 'An Alhambra tower at golden hour',
-    author: 'Kevin Charit',
+    src: '/granada/alhambra-columns.jpg',
+    title: 'Muqarnas-carved arches, the Alhambra',
+    author: 'Izuddin Helmi Adnan',
     licence: 'Unsplash License',
     licenceUrl: 'https://unsplash.com/license',
-    sourceUrl: 'https://unsplash.com/photos/UNN2Yyd-_tg',
+    sourceUrl: 'https://unsplash.com/photos/a-large-ornate-building-with-columns-Avj33IMYv2g',
     source: 'Unsplash',
     cropped: true,
   },
@@ -345,7 +345,7 @@ export function formatDeadline(date: Date): string {
 
 /** Subject line does real work here: bookings arrive in a human inbox. */
 export function bookingMailto(): string {
-  const subject = `Booking enquiry — ${programme.name}, ${edition.label}`;
+  const subject = `Booking enquiry · ${programme.name}, ${edition.label}`;
   const body = [
     `I'd like to reserve a place on ${programme.name}, ${edition.dateRange}, in ${edition.city}.`,
     '',

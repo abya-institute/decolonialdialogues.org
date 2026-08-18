@@ -77,13 +77,14 @@ export default function Home() {
         />
         {/*
           Clay only where the text sits, clearing fast: solid behind the copy,
-          gone by two-thirds up so the Alhambra and the Sierra Nevada read as a
-          photograph, not a wash. An earlier version tinted the whole frame
-          down to 40% at the very top and read as the clay flooding the page.
+          then a very light reach all the way up the frame so the Alhambra and
+          the Sierra Nevada still read as a photograph, not a wash. An earlier
+          version tinted the whole frame down to 40% at the very top and read
+          as the clay flooding the page.
         */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,var(--color-clay)_0%,var(--color-clay)_6%,color-mix(in_srgb,var(--color-clay)_58%,transparent)_26%,color-mix(in_srgb,var(--color-clay)_18%,transparent)_46%,transparent_64%)]"
+          className="absolute inset-0 -z-10 bg-[linear-gradient(to_top,var(--color-clay)_0%,var(--color-clay)_6%,color-mix(in_srgb,var(--color-clay)_35%,transparent)_60%,color-mix(in_srgb,var(--color-clay)_12%,transparent)_80%,transparent_100%)]"
         />
 
         <div className={`${CONTAINER} pt-32 pb-16 sm:pb-20`}>
@@ -459,13 +460,13 @@ export default function Home() {
             <p className="measure mt-6 text-muted">
               We are putting together proper guidance on where to stay in
               Granada and how to get in from the airport. In the meantime, write
-              to us and we will help you plan it — this is the question we are
+              to us and we will help you plan it. This is the question we are
               asked most, and we would rather answer it properly than leave you
               guessing.
             </p>
             <a
               href={`mailto:${contact.email}?subject=${encodeURIComponent(
-                `Travel and accommodation — ${programme.name}, ${edition.label}`,
+                `Travel and accommodation · ${programme.name}, ${edition.label}`,
               )}`}
               className="ui mt-9 inline-flex items-center gap-3 border border-rule px-6 py-3 text-sm font-medium transition-colors hover:border-faint"
             >
@@ -582,12 +583,7 @@ export default function Home() {
             </ul>
           </div>
 
-          {/*
-            Open by default: CC BY and CC BY-SA require the attribution to be
-            visible, and a collapsed panel does not meet that. It stays
-            collapsible so a reader can put it away.
-          */}
-          <details open className="group mt-14 border-t border-rule pt-8">
+          <details className="group mt-14 border-t border-rule pt-8">
             <summary className="ui flex cursor-pointer list-none items-center gap-2.5 text-sm text-muted transition-colors hover:text-paper [&::-webkit-details-marker]:hidden">
               <Chevron className="h-3.5 w-3.5 shrink-0 transition-transform duration-300 ease-out group-open:rotate-90" />
               Photography credits

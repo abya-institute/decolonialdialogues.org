@@ -1,7 +1,7 @@
 import sharp from 'sharp';
 import { readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-const dirs = ['public/granada', 'public/faculty'];
+const dirs = ['public/granada', 'public/faculty', 'public/instagram'];
 
 /*
   The tilework runs full-bleed and, in the case of the courses, as a thin
@@ -10,7 +10,7 @@ const dirs = ['public/granada', 'public/faculty'];
   are prepared at their band aspect ahead of time and kept large; everything
   else is a photograph shown whole and 2400px is plenty.
 */
-const MAX_WIDTH = { 'public/faculty': 800, 'public/granada': 2400 };
+const MAX_WIDTH = { 'public/faculty': 800, 'public/granada': 2400, 'public/instagram': 800 };
 const WIDE = { 'zellij-tile-course.jpg': 3840, 'alhambra-arabesque-band.jpg': 3840 };
 
 const out = {};

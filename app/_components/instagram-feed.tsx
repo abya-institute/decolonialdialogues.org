@@ -1,8 +1,6 @@
-"use client";
-
-import { useEffect, useRef } from "react";
 import { contact } from "@/data/edition";
-import { ArrowRight, Instagram } from "./icons";
+import { ArrowRight, Instagram, Play } from "./icons";
+import { Photo } from "./photo";
 
 /*
   Vendor: Behold (behold.so). Chosen over LightWidget and EmbedSocial because
@@ -11,62 +9,70 @@ import { ArrowRight, Instagram } from "./icons";
 
   To switch the feed on: create a feed at behold.so, then set
   NEXT_PUBLIC_BEHOLD_FEED_ID in the environment. Until that exists this
-  section degrades to a follow panel — never to invented posts, which would
-  put fabricated content on a page whose whole claim is that it doesn't.
-
-  The widget script is fetched only when the section approaches the viewport,
-  so a third-party bundle can never delay first paint.
+  section shows a hand-picked set of reels as local thumbnails — see REELS
+  below — each linking out to the real post. The thumbnails are downloaded
+  once (not fetched live) because a live embed depends on Instagram's script
+  reaching the visitor's browser at render time, which is exactly the kind of
+  third-party fragility this fallback exists to avoid.
 */
 const FEED_ID = process.env.NEXT_PUBLIC_BEHOLD_FEED_ID;
-const WIDGET_SRC = "https://w.behold.so/widget.js";
+
+/*
+  Hand-picked while no live feed is configured. Once NEXT_PUBLIC_BEHOLD_FEED_ID
+  is set this list stops rendering — see the fallback below — so it never
+  needs to be removed by hand, only left to go stale under a real feed.
+
+  Thumbnails are saved locally at public/instagram/ (see data/image-meta.ts).
+  To refresh one: open the reel, save its cover image over the matching file,
+  then run `node scripts/optimize-images.mjs`.
+*/
+const REELS = [
+  {
+    url: "https://www.instagram.com/decolonialdialogues/reel/DZ2USPPorj-/",
+    thumb: "/instagram/reel-1.jpg",
+  },
+  {
+    url: "https://www.instagram.com/decolonialdialogues/reel/Da5l71bIcri/",
+    thumb: "/instagram/reel-2.jpg",
+  },
+  {
+    url: "https://www.instagram.com/decolonialdialogues/reel/DUyNVa8CGK-/",
+    thumb: "/instagram/reel-3.jpg",
+  },
+] as const;
 
 export function InstagramFeed() {
-  const hostRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!FEED_ID) return;
-    const host = hostRef.current;
-    if (!host) return;
-
-    let loaded = false;
-    const load = () => {
-      if (loaded) return;
-      loaded = true;
-      if (document.querySelector(`script[src="${WIDGET_SRC}"]`)) return;
-      const script = document.createElement("script");
-      script.src = WIDGET_SRC;
-      script.type = "module";
-      script.async = true;
-      document.body.appendChild(script);
-    };
-
-    if (!("IntersectionObserver" in window)) {
-      load();
-      return;
-    }
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((e) => e.isIntersecting)) {
-          load();
-          io.disconnect();
-        }
-      },
-      { rootMargin: "400px 0px" },
-    );
-    io.observe(host);
-    return () => io.disconnect();
-  }, []);
-
   return (
-    <div ref={hostRef}>
+    <div>
       {FEED_ID && <div data-behold-id={FEED_ID} className="mb-12" />}
 
-      {/*
-        Always rendered, so it doubles as the standing fallback: if the widget
-        script is blocked or fails, this section is still a complete thought
-        rather than a heading above an empty div.
-      */}
+      {!FEED_ID && (
+        <ol className="mb-12 grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-6">
+          {REELS.map((reel, i) => (
+            <li key={reel.url}>
+              <a
+                href={reel.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Watch reel ${i + 1} on Instagram`}
+                className="group relative block"
+              >
+                <Photo
+                  src={reel.thumb}
+                  alt=""
+                  className="relative aspect-[9/16] rounded-lg"
+                  sizes="(min-width: 640px) 33vw, 50vw"
+                  imgClassName="transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+                <span className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-lg bg-clay-sunk/0 transition-colors duration-500 group-hover:bg-clay-sunk/25">
+                  <Play className="h-9 w-9 text-paper opacity-0 drop-shadow transition-opacity duration-500 group-hover:opacity-100" />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      )}
+
       <a
         href={contact.instagramUrl}
         target="_blank"

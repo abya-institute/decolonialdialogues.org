@@ -29,12 +29,12 @@ const description = `A four-day course in ${edition.city}, ${edition.dateRange}.
 export const metadata: Metadata = {
   metadataBase: new URL("https://decolonialdialogues.org"),
   title: {
-    default: `${programme.name} — ${edition.city}, ${edition.label}`,
-    template: `%s — ${programme.name}`,
+    default: `${programme.name} · ${edition.city}, ${edition.label}`,
+    template: `%s · ${programme.name}`,
   },
   description,
   openGraph: {
-    title: `${programme.name} — ${edition.city}, ${edition.label}`,
+    title: `${programme.name} · ${edition.city}, ${edition.label}`,
     description,
     type: "website",
     locale: "en_GB",

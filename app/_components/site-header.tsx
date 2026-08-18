@@ -14,7 +14,9 @@ const NAV = [
 /**
  * Sits transparent over the hero photograph and takes on a ground once the
  * visitor scrolls past it, so the reserve action is always legible without a
- * permanent bar cutting into the opening image.
+ * permanent bar cutting into the opening image. The nav's own colour swaps
+ * with it: clay (dark) reads against the transparent hero, muted/paper
+ * reads once the bar has its own clay ground behind it.
  */
 export function SiteHeader() {
   const [settled, setSettled] = useState(false);
@@ -35,16 +37,6 @@ export function SiteHeader() {
       }`}
     >
       {/*
-        Over the hero the sky is bright enough to swallow the nav, so an
-        unsettled header carries its own scrim rather than a solid ground.
-      */}
-      <div
-        aria-hidden="true"
-        className={`pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-clay/70 to-transparent transition-opacity duration-500 ${
-          settled ? "opacity-0" : "opacity-100"
-        }`}
-      />
-      {/*
         The bar is deliberately tall. It is the only permanent chrome on a page
         whose every other element is generous, and at 64px it read as a strip
         laid over the design rather than part of it.
@@ -52,7 +44,9 @@ export function SiteHeader() {
       <div className="relative mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between gap-6 px-5 sm:h-20 sm:px-8 lg:h-[5.5rem]">
         <a
           href="#top"
-          className="flex items-center gap-3 text-paper transition-opacity hover:opacity-80"
+          className={`flex items-center gap-3 transition-colors duration-500 hover:opacity-80 ${
+            settled ? "text-paper" : "text-clay"
+          }`}
         >
           <Pomegranate className="h-6 w-6 shrink-0 text-saffron sm:h-7 sm:w-7" />
           <span className="ui text-lg font-medium tracking-tight sm:text-xl">
@@ -61,12 +55,18 @@ export function SiteHeader() {
         </a>
 
         <nav aria-label="Sections" className="hidden lg:block">
-          <ul className="ui flex items-center gap-10 text-[1.0625rem] font-medium text-muted">
+          <ul
+            className={`ui flex items-center gap-10 text-[1.0625rem] font-medium transition-colors duration-500 ${
+              settled ? "text-muted" : "text-clay"
+            }`}
+          >
             {NAV.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="transition-colors hover:text-paper"
+                  className={`transition-colors ${
+                    settled ? "hover:text-paper" : "hover:text-clay-sunk"
+                  }`}
                 >
                   {item.label}
                 </a>

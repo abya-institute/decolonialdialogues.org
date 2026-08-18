@@ -75,6 +75,14 @@ export function Instagram({ className }: IconProps) {
   );
 }
 
+export function Play({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...stroke}>
+      <path d="M8.5 5.8v12.4c0 .8.9 1.3 1.6.9l10-6.2a1 1 0 0 0 0-1.8l-10-6.2c-.7-.4-1.6.1-1.6.9Z" />
+    </svg>
+  );
+}
+
 export function Chevron({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" className={className} {...stroke}>
