@@ -11,7 +11,19 @@ const dirs = ['public/granada', 'public/faculty', 'public/instagram'];
   else is a photograph shown whole and 2400px is plenty.
 */
 const MAX_WIDTH = { 'public/faculty': 800, 'public/granada': 2400, 'public/instagram': 800 };
-const WIDE = { 'zellij-tile-course.jpg': 3840, 'alhambra-arabesque-band.jpg': 3840 };
+/*
+  The hero photo is landscape (16:9-ish) but its <Photo> box runs the full
+  viewport height, so on a tall phone object-cover has to scale it up to
+  cover the height rather than the width — the usual 2400px cap left it
+  visibly soft there even though the same crop looked fine on a wide desktop
+  window. Kept at its full source width so there's enough vertical detail
+  once that scale-up happens.
+*/
+const WIDE = {
+  'zellij-tile-course.jpg': 3840,
+  'alhambra-arabesque-band.jpg': 3840,
+  'alhambra-sierra-nevada.jpg': 3840,
+};
 
 const out = {};
 for (const d of dirs) {

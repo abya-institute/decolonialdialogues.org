@@ -72,7 +72,15 @@ export default function Home() {
           alt="The Alhambra on its wooded hill above Granada, with the snow-covered peaks of the Sierra Nevada rising behind it in late afternoon light."
           className="absolute inset-0 -z-10"
           imgClassName="hero-settle object-[52%_42%]"
-          sizes="100vw"
+          /*
+            This box is min-h-[100svh], so on a narrow phone object-cover
+            scales to the *height*, not 100vw — plain "100vw" told the
+            browser to fetch a much smaller bucket than it actually needed
+            and the upscaled result went soft. 178vh matches the photo's own
+            aspect ratio, so the requested width always covers whichever
+            dimension object-cover is scaling to.
+          */
+          sizes="max(100vw, 178vh)"
           priority
         />
         {/*
