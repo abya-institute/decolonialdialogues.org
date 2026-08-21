@@ -2,9 +2,9 @@
 name: Decolonial Dialogues
 description: The Alhambra's own red clay as the ground, real Nasrid tilework as the page's material, and gold as the one colour that reads on it.
 colors:
-  clay: "#6b2e22"
-  clay-raised: "#7a382a"
-  clay-sunk: "#4a1e16"
+  clay: "#52180b"
+  clay-raised: "#612213"
+  clay-sunk: "#310800"
   paper: "#f4eadc"
   muted: "#cfae9f"
   faint: "#b48675"
@@ -156,22 +156,22 @@ A three-step clay ramp taken from the Alhambra's rammed earth, limewash for type
 - **Clay Sunk** (`{colors.clay-sunk}`): The well behind every photograph, set both on the `Photo` wrapper and on the base `img` element so no image can ever flash white while it loads. It is also the type colour inside a filled saffron pill.
 
 ### Type
-- **Paper** (`{colors.paper}`): Body and heading text — 8.7:1 on clay. Warm limewash, never pure white.
-- **Muted** (`{colors.muted}`): Secondary running text — supporting paragraphs, captions, attributions, nav at rest, field labels. 5.0:1, and tinted from the ground rather than greyed.
-- **Faint** (`{colors.faint}`): Decorative and structural only — link underline strokes, the excluded-item minus marks, the hero separator dot. 3.2:1 clears the graphics floor and nothing more.
-- **Rule** (`{colors.rule}`): The one divider value, at 1.5:1. Every hairline in the build is a 1px border in this colour.
+- **Paper** (`{colors.paper}`): Body and heading text — 11.8:1 on clay. Warm limewash, never pure white.
+- **Muted** (`{colors.muted}`): Secondary running text — supporting paragraphs, captions, attributions, nav at rest, field labels. 6.8:1, and tinted from the ground rather than greyed.
+- **Faint** (`{colors.faint}`): Decorative and structural only — link underline strokes, the excluded-item minus marks, the hero separator dot. 4.4:1 clears the graphics floor and nothing more.
+- **Rule** (`{colors.rule}`): The one divider value, at 2.0:1. Every hairline in the build is a 1px border in this colour.
 
 ### Glazes
-- **Saffron** (`{colors.saffron}`): 4.8:1. The booking action's fill, the early-rate line, the pomegranate mark, the follow link, the focus ring. Gold on red is the Alhambra's own contrast.
+- **Saffron** (`{colors.saffron}`): 6.5:1. The booking action's fill, the early-rate line, the pomegranate mark, the follow link, the focus ring. Gold on red is the Alhambra's own contrast.
 - **Saffron Lit** (`{colors.saffron-lit}`): The hover ground for the primary pill. The contrast lifts rather than dimming; the type stays `clay-sunk`.
-- **Teal** (`{colors.teal}`): 4.9:1. The included-item checks. A drawn mark, never words.
-- **Azure** (`{colors.azure}`): 5.1:1. The mail glyph and the Instagram glyph. A drawn mark, never words.
+- **Teal** (`{colors.teal}`): 6.8:1. The included-item checks. A drawn mark, never words.
+- **Azure** (`{colors.azure}`): 7.0:1. The mail glyph and the Instagram glyph. A drawn mark, never words.
 
 ### Named Rules
 
 **The Gold Voice Rule.** Anything the accent has to say, it says in saffron. Teal and azure exist to mark, not to speak: a check, a glyph, a stroke. If a teal or azure element acquires words, it becomes saffron or `paper`. This is what keeps four colours from reading as four colours.
 
-**The Ground Is The Fruit Rule.** There is no red accent, because the page is already red. A pomegranate-coloured mark on clay measures 1.5:1 and disappears. The pomegranate survives as the drawn icon — in saffron — and as the ground itself.
+**The Ground Is The Fruit Rule.** There is no red accent, because the page is already red. A pomegranate-coloured mark on clay measures 2.0:1 and disappears. The pomegranate survives as the drawn icon — in saffron — and as the ground itself.
 
 **The Legibility Floor Rule.** Anything carrying text on clay clears 4.5:1, and the values above are the measured figures, not estimates. Below that floor a value is decoration — a rule, a marker, an underline stroke — and may never be given words to carry. This is why the closing section's wash is capped at 60% clay: any heavier and `paper` fails over the brightest passage of sky above the gate; any lighter and the gate itself stops being visible.
 

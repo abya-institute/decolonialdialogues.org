@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 
 /* The clay ground runs into the phone's own browser chrome. */
 export const viewport: Viewport = {
-  themeColor: "#6b2e22",
+  themeColor: "#52180b",
 };
 
 /*

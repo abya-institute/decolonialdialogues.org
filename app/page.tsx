@@ -24,6 +24,7 @@ import {
   onTheGround,
   programme,
   testimonials,
+  travelOptions,
 } from "@/data/edition";
 import type { ImagePath } from "@/data/image-meta";
 
@@ -446,10 +447,10 @@ export default function Home() {
   }
 
   /*
-    PLACEHOLDER — awaiting real content from the organizers: neighbourhoods to
-    stay in, rough nightly costs, which airport, and how to get in from Málaga
-    or Granada. Until then this section states only what is confirmed and
-    routes the question to a human. Do not invent lodging recommendations.
+    Arrival routes are confirmed by the organizers. Accommodation guidance
+    (neighbourhoods to stay in, rough nightly costs) is still pending, so
+    that half of the section states only what is confirmed and routes the
+    question to a human. Do not invent lodging recommendations.
   */
   function GettingThere() {
     return (
@@ -465,12 +466,21 @@ export default function Home() {
               Flights, airport transfer, accommodation and most meals are not
               included, so you book your own travel and somewhere to sleep.
             </p>
-            <p className="measure mt-6 text-muted">
-              We are putting together proper guidance on where to stay in
-              Granada and how to get in from the airport. In the meantime, write
-              to us and we will help you plan it. This is the question we are
-              asked most, and we would rather answer it properly than leave you
-              guessing.
+
+            <ul className="mt-10 grid gap-y-8 sm:grid-cols-3 sm:gap-x-10 sm:gap-y-0">
+              {travelOptions.map((option) => (
+                <li key={option.id} className="border-t border-rule pt-6">
+                  <h3 className="ui text-base font-medium">{option.title}</h3>
+                  <p className="mt-2 text-muted">{option.body}</p>
+                </li>
+              ))}
+            </ul>
+
+            <p className="measure mt-10 text-muted">
+              We are still putting together guidance on where to stay in
+              Granada. In the meantime, write to us and we will help you plan
+              it. This is the question we are asked most, and we would rather
+              answer it properly than leave you guessing.
             </p>
             <a
               href={`mailto:${contact.email}?subject=${encodeURIComponent(

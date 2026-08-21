@@ -174,6 +174,25 @@ export const onTheGround: CurriculumEntry[] = [
   },
 ];
 
+/** Confirmed by the organizers. Accommodation guidance is still pending. */
+export const travelOptions: CurriculumEntry[] = [
+  {
+    id: 'granada-airport',
+    title: 'Granada Airport',
+    body: 'The most direct route — flights land close to the city itself.',
+  },
+  {
+    id: 'madrid-barajas',
+    title: 'Madrid–Barajas Airport',
+    body: 'From there, a fast train to Granada takes about 3 hours, or a bus about 5.',
+  },
+  {
+    id: 'malaga-airport',
+    title: 'Málaga Airport',
+    body: 'From there, a bus to Granada takes about 2 hours.',
+  },
+];
+
 export const faculty: FacultyMember[] = [
   {
     id: 'chaimaa-boukharsa',

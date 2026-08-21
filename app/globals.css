@@ -14,24 +14,24 @@
 
 @theme inline {
   /* Clay: the rammed-earth ground, in three steps. */
-  --color-clay: #6b2e22;
-  --color-clay-raised: #7a382a;
-  --color-clay-sunk: #4a1e16;
+  --color-clay: #52180b;
+  --color-clay-raised: #612213;
+  --color-clay-sunk: #310800;
 
-  /* Limewash type on clay — 8.7:1. Never pure white. */
+  /* Limewash type on clay — 11.8:1. Never pure white. */
   --color-paper: #f4eadc;
-  /* Secondary running text, tinted from the ground rather than greyed — 5.0:1. */
+  /* Secondary running text, tinted from the ground rather than greyed — 6.8:1. */
   --color-muted: #cfae9f;
-  /* Decoration only: 3.2:1 clears the graphics floor, not the text floor. */
+  /* Decoration only: 4.4:1 clears the graphics floor, not the text floor. */
   --color-faint: #b48675;
-  /* The one hairline value — 1.5:1, present without cutting. */
+  /* The one hairline value — 2.0:1, present without cutting. */
   --color-rule: #8c4635;
 
   /* Glaze colours, straight off the tile. */
-  --color-saffron: #d9a93b; /* 4.8:1 — the action, and every small mark */
+  --color-saffron: #d9a93b; /* 6.5:1 — the action, and every small mark */
   --color-saffron-lit: #efc463; /* hover: the contrast lifts, never dims */
-  --color-teal: #6bc4b0; /* 4.9:1 — graphic marks */
-  --color-azure: #8fbce0; /* 5.1:1 — graphic marks */
+  --color-teal: #6bc4b0; /* 6.8:1 — graphic marks */
+  --color-azure: #8fbce0; /* 7.0:1 — graphic marks */
 
   --font-display: var(--font-alegreya);
   --font-body: var(--font-alegreya);
